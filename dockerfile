@@ -8,7 +8,8 @@ WORKDIR /app
 COPY . .
 
 RUN pip install --no-cache-dir torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
-RUN pip install --no-cache-dir ./moshi/. accelerate
+RUN pip install --no-cache-dir ./moshi/. 
+RUN pip install accelerate
 
 EXPOSE 8998
 
